@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute</title>
     <style>
-        a[target] {
+        /*
+        a[target="_blank"] {
             color: red;
         }
+
+        /*p[title="belajar"] {
+            color: red;
+        }
+
+        p[title|="belajar"] {
+            color: red;
+        }
+        
+
+        p[title^="belajar"] {
+            color: red;
+        }
+        
+
+        p[title$="belajar"] {
+            color: red;
+        }
+            
+
+        p[title*="belajar"] {
+            color: red;
+        }
+        */
+        [title*="belajar"] {
+            color: red;
+        }
+
     </style>
 </head>
 <body>
@@ -15,6 +44,22 @@
     <a href="" >Contoh 2</a>
     <a href="" target="_blank">Contoh 3</a>
     <a href="" >Contoh 4</a>
-    <a href="" target="_blank">Contoh 5</a>
+    <a href="" target="_self">Contoh 5</a>
+    <a href="" target="_self">Belajar</a>
+
+    <p title="belajar frontend">ini dipilih</p>
+    <p title="belajarfrontend">ini tidak dipilih</p>
+    <p title="belajar-frontend">ini tidak dipilih</p>
+    <p title="belajar">ini dipilih</p>
+    <p title="frontend-belajar">ini dipilih</p>
+    <p title="frontend-belajar-frontend">ini dipilih</p>
+
+    <span title="pemograman belajar">ini contoh</span>
+    
+
+
+
+
+
 </body>
 </html>
